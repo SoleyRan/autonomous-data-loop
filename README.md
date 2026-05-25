@@ -11,7 +11,7 @@ An autonomous driving data loop system design and engineering portfolio, coverin
 This project demonstrates how an autonomous driving data loop can evolve from basic data upload to a complete engineering loop:
 
 1. Collect and package vehicle-side data.
-2. Upload selected data from field sites to the company-side platform.
+2. Upload selected data from edge or field collection nodes to the company-side platform.
 3. Review and replay MCAP assets on the platform.
 4. Run automated annotation and 3D quality inspection.
 5. Export labels in multiple dataset formats.
@@ -27,15 +27,15 @@ This project demonstrates how an autonomous driving data loop can evolve from ba
 | Phase 3 | Dataset management | Canonical labels, dataset versioning, sample selection, dataset traceability | Planned |
 | Phase 4 | Model training | Training task orchestration, model registry, metric tracking, model-to-data traceability | Planned |
 | Phase 5 | Automated test and evaluation | MCAP replay, SOC/Xavier execution, perception output comparison, evaluation reports | Planned |
-| Phase 6 | Feedback-driven collection | Failed-case mining, probe-rule updates, targeted recollection, closed-loop iteration | Planned |
+| Phase 6 | Feedback-driven collection | Failed-case analysis, probe-rule updates, targeted recollection, closed-loop iteration | Planned |
 
 ## High-Level Architecture
 
 ```mermaid
 flowchart LR
-  A["Mining Site Vehicles"] --> B["Vehicle Data Capture"]
+  A["Test Vehicles"] --> B["Vehicle Data Capture"]
   B --> C["MCAP Recording and Probe Rules"]
-  C --> D["Field Server Packaging"]
+  C --> D["Edge Node Packaging"]
   D --> E["Public Transfer / Shared Storage"]
   E --> F["Company Platform"]
   F --> G["MCAP Replay and Selection"]
