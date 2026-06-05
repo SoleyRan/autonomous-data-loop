@@ -47,7 +47,15 @@ flowchart LR
 - [Label Schema and Export](label-schema-and-export.md)
 - [Development Plan](development-plan.md)
 
+## Public Examples
+
+- [MCAP asset metadata example](../../examples/metadata/mcap-asset-metadata.example.json)
+- [Annotation input manifest example](../../examples/manifest/phase2-annotation-input-manifest.example.json)
+- [Canonical label example](../../examples/label-format/canonical-label.example.json)
+- [Phase 2 mock API](../../examples/api/phase2-api.openapi.yaml)
+- [Task state machine demo](../../src-demo/task-state-machine-demo/README.md)
+- [Canonical label converter demo](../../src-demo/label-converter-demo/README.md)
+
 ## Status
 
 Designed and ready for implementation.
-

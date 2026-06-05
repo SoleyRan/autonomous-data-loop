@@ -47,7 +47,15 @@ flowchart LR
 - [标签格式与导出](label-schema-and-export.zh-CN.md)
 - [开发计划](development-plan.zh-CN.md)
 
+## 公开示例
+
+- [MCAP 资产元数据示例](../../examples/metadata/mcap-asset-metadata.example.json)
+- [标注输入 manifest 示例](../../examples/manifest/phase2-annotation-input-manifest.example.json)
+- [统一标签格式示例](../../examples/label-format/canonical-label.example.json)
+- [阶段二 mock API](../../examples/api/phase2-api.openapi.yaml)
+- [任务状态机 demo](../../src-demo/task-state-machine-demo/README.zh-CN.md)
+- [统一标签转换 demo](../../src-demo/label-converter-demo/README.zh-CN.md)
+
 ## 状态
 
 已完成设计，准备开发。
-
