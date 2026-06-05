@@ -1,0 +1,32 @@
+{
+  "manifest_version": "1.0",
+  "job_id": "annotation_job_demo_000001",
+  "source_mcap": {
+    "mcap_id": "mcap_demo_000001",
+    "package_id": "pkg_demo_20260605_000001",
+    "time_range": {
+      "start_time": "2026-06-05T10:00:00.000Z",
+      "end_time": "2026-06-05T10:00:21.000Z"
+    }
+  },
+  "inputs": {
+    "point_cloud_dir": "cache/annotation_job_demo_000001/point_cloud",
+    "image_dir": "cache/annotation_job_demo_000001/images",
+    "frame_mapping_file": "cache/annotation_job_demo_000001/frame_mapping.json"
+  },
+  "label_taxonomy": {
+    "schema_version": "demo_taxonomy_v1",
+    "classes": [
+      "car",
+      "truck",
+      "pedestrian",
+      "cyclist",
+      "traffic_cone",
+      "barrier"
+    ]
+  },
+  "output": {
+    "canonical_label_uri": "object://demo-bucket/labels/draft/annotation_job_demo_000001.json"
+  }
+}
+

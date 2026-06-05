@@ -1,0 +1,34 @@
+{
+  "mcap_id": "mcap_demo_000001",
+  "package_id": "pkg_demo_20260605_000001",
+  "asset_type": "mcap_archive",
+  "source": {
+    "vehicle_alias": "vehicle_demo_01",
+    "edge_node": "edge_node_demo_a",
+    "upload_source": "edge_collection_node"
+  },
+  "time_range": {
+    "start_time": "2026-06-05T10:00:00.000Z",
+    "end_time": "2026-06-05T10:00:21.000Z",
+    "duration_seconds": 21
+  },
+  "trigger": {
+    "event_type": "sample_trigger_event",
+    "probe_rule_id": "probe_rule_demo_001"
+  },
+  "storage": {
+    "archive_uri": "object://demo-bucket/raw-mcap/pkg_demo_20260605_000001.tar.zst",
+    "size_bytes": 341275952,
+    "sharding_count": 33,
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "demo_sha256_checksum_value"
+    }
+  },
+  "status": {
+    "ingest_status": "ready",
+    "playback_status": "available",
+    "annotation_status": "not_started"
+  }
+}
+

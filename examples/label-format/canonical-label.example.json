@@ -1,0 +1,47 @@
+{
+  "label_version_id": "label_version_demo_000001",
+  "label_stage": "draft",
+  "source_mcap_id": "mcap_demo_000001",
+  "schema_version": "canonical_label_v1",
+  "frames": [
+    {
+      "frame_id": "frame_demo_000001",
+      "frame_timestamp_ns": 1780653600000000000,
+      "sensor_name": "lidar_front",
+      "objects": [
+        {
+          "object_id": "object_demo_000001",
+          "track_id": "track_demo_000001",
+          "class_name": "car",
+          "confidence": 0.94,
+          "box_3d": {
+            "center": {
+              "x": 12.4,
+              "y": -1.8,
+              "z": 0.9
+            },
+            "size": {
+              "length": 4.6,
+              "width": 1.9,
+              "height": 1.6
+            },
+            "rotation": {
+              "yaw": 1.57
+            }
+          },
+          "attributes": {
+            "occlusion": "partial",
+            "moving_state": "moving"
+          }
+        }
+      ]
+    }
+  ],
+  "lineage": {
+    "generated_by": "auto_annotation_worker",
+    "annotation_job_id": "annotation_job_demo_000001",
+    "qc_task_id": null,
+    "created_at": "2026-06-05T10:20:00.000Z"
+  }
+}
+

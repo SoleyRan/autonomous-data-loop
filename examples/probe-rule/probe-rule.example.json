@@ -1,0 +1,30 @@
+{
+  "probe_rule_id": "probe_rule_demo_001",
+  "name": "sample_event_capture_rule",
+  "version": "1.0",
+  "enabled": true,
+  "priority": 50,
+  "validity": {
+    "start_at": "2026-06-05T00:00:00.000Z",
+    "expire_at": "2026-07-05T00:00:00.000Z"
+  },
+  "trigger": {
+    "event_type": "sample_trigger_event",
+    "min_duration_seconds": 3
+  },
+  "capture": {
+    "pre_seconds": 10,
+    "post_seconds": 10,
+    "topics": [
+      "/camera/front",
+      "/lidar/front",
+      "/vehicle/state"
+    ]
+  },
+  "upload": {
+    "strategy": "on_event",
+    "max_package_size_mb": 1024,
+    "compress": true
+  }
+}
+

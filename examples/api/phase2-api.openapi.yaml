@@ -1,0 +1,90 @@
+openapi: 3.0.3
+info:
+  title: Autonomous Data Loop Phase 2 Mock API
+  version: 0.1.0
+  description: Sanitized mock API for MCAP asset management, automated annotation, Xtreme1 QC, and export.
+paths:
+  /api/v1/mcap-assets:
+    get:
+      summary: List MCAP assets
+      parameters:
+        - name: event_type
+          in: query
+          schema:
+            type: string
+        - name: upload_time_from
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: playback_status
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: MCAP asset list
+  /api/v1/annotation-jobs:
+    post:
+      summary: Create automated annotation job
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - mcap_ids
+              properties:
+                mcap_ids:
+                  type: array
+                  items:
+                    type: string
+                annotation_profile:
+                  type: string
+      responses:
+        "202":
+          description: Annotation job accepted
+  /api/v1/qc-tasks:
+    post:
+      summary: Create Xtreme1 quality inspection task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - draft_label_version_id
+              properties:
+                draft_label_version_id:
+                  type: string
+                reviewer:
+                  type: string
+      responses:
+        "202":
+          description: QC task accepted
+  /api/v1/export-jobs:
+    post:
+      summary: Create label export job
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - label_version_id
+                - target_format
+              properties:
+                label_version_id:
+                  type: string
+                target_format:
+                  type: string
+                  enum:
+                    - kitti
+                    - nuscenes
+      responses:
+        "202":
+          description: Export job accepted
+
