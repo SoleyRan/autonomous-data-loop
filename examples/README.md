@@ -8,8 +8,8 @@ This directory contains sanitized public examples for the autonomous data loop p
 
 | Directory | Content |
 |---|---|
-| `metadata/` | MCAP asset metadata examples |
-| `manifest/` | Package manifest examples |
+| `metadata/` | MCAP and dataset metadata examples |
+| `manifest/` | Package and dataset manifest examples |
 | `label-format/` | Canonical label examples |
 | `api/` | Mock API definitions |
 | `probe-rule/` | Probe rule examples |
@@ -17,4 +17,3 @@ This directory contains sanitized public examples for the autonomous data loop p
 ## Rule
 
 Examples should use generic IDs, generic names, and synthetic timestamps. Do not include real vehicles, devices, endpoints, paths, customer data, or credentials.
-

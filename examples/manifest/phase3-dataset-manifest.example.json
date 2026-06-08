@@ -1,0 +1,50 @@
+{
+  "manifest_version": "1.0",
+  "dataset_id": "dataset_demo_perception_3d",
+  "dataset_version_id": "dataset_demo_perception_3d_v1",
+  "name": "Demo Perception 3D Dataset",
+  "status": "frozen",
+  "created_at": "2026-06-08T10:00:00.000Z",
+  "source": {
+    "label_versions": [
+      "label_version_demo_000001",
+      "label_version_demo_000002"
+    ],
+    "sample_index_uri": "object://demo-bucket/datasets/dataset_demo_perception_3d_v1/sample_index.json"
+  },
+  "splits": {
+    "train": {
+      "sample_count": 800,
+      "uri": "object://demo-bucket/datasets/dataset_demo_perception_3d_v1/splits/train.json"
+    },
+    "val": {
+      "sample_count": 100,
+      "uri": "object://demo-bucket/datasets/dataset_demo_perception_3d_v1/splits/val.json"
+    },
+    "test": {
+      "sample_count": 100,
+      "uri": "object://demo-bucket/datasets/dataset_demo_perception_3d_v1/splits/test.json"
+    }
+  },
+  "statistics": {
+    "sample_count": 1000,
+    "frame_count": 1000,
+    "object_count_by_class": {
+      "car": 2400,
+      "truck": 320,
+      "pedestrian": 410,
+      "cyclist": 120
+    },
+    "scene_tags": {
+      "daytime": 720,
+      "night": 280,
+      "intersection": 210
+    }
+  },
+  "lineage": {
+    "source_mcap_count": 60,
+    "source_label_stage": "frozen",
+    "created_by": "dataset_builder_demo"
+  }
+}
+

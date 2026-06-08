@@ -1,0 +1,20 @@
+{
+  "split_config_version": "1.0",
+  "strategy": "deterministic_hash",
+  "hash_key": [
+    "source_mcap_id",
+    "frame_timestamp_ns"
+  ],
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "constraints": {
+    "keep_same_mcap_in_same_split": true,
+    "preserve_class_distribution": true,
+    "preserve_scene_tag_distribution": true
+  },
+  "seed": "dataset_demo_seed_v1"
+}
+

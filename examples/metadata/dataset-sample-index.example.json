@@ -1,0 +1,42 @@
+{
+  "dataset_version_id": "dataset_demo_perception_3d_v1",
+  "samples": [
+    {
+      "sample_id": "sample_demo_000001",
+      "source_mcap_id": "mcap_demo_000001",
+      "frame_timestamp_ns": 1780653600000000000,
+      "label_version_id": "label_version_demo_000001",
+      "sensors": [
+        "lidar_front",
+        "camera_front"
+      ],
+      "object_classes": [
+        "car",
+        "pedestrian"
+      ],
+      "scene_tags": [
+        "daytime",
+        "intersection"
+      ],
+      "split": "train"
+    },
+    {
+      "sample_id": "sample_demo_000002",
+      "source_mcap_id": "mcap_demo_000002",
+      "frame_timestamp_ns": 1780653601000000000,
+      "label_version_id": "label_version_demo_000002",
+      "sensors": [
+        "lidar_front",
+        "camera_front"
+      ],
+      "object_classes": [
+        "truck"
+      ],
+      "scene_tags": [
+        "night"
+      ],
+      "split": "val"
+    }
+  ]
+}
+

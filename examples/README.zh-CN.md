@@ -8,8 +8,8 @@
 
 | 目录 | 内容 |
 |---|---|
-| `metadata/` | MCAP 资产元数据示例 |
-| `manifest/` | 数据包 manifest 示例 |
+| `metadata/` | MCAP 和数据集元数据示例 |
+| `manifest/` | 数据包和数据集 manifest 示例 |
 | `label-format/` | 统一标签格式示例 |
 | `api/` | Mock API 定义 |
 | `probe-rule/` | 探针规则示例 |
@@ -17,4 +17,3 @@
 ## 规则
 
 示例应使用通用 ID、通用名称和模拟时间戳。不要包含真实车辆、设备、接口地址、路径、客户数据或凭据。
-
