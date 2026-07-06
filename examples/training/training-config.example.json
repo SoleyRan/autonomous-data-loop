@@ -1,0 +1,29 @@
+{
+  "training_config_id": "training_config_demo_3d_detector_v1",
+  "model_family": "perception_3d_detection",
+  "architecture": {
+    "name": "demo_3d_detector",
+    "backbone": "demo_backbone",
+    "head": "demo_detection_head"
+  },
+  "dataset": {
+    "dataset_version_id": "dataset_demo_perception_3d_v1",
+    "manifest_uri": "object://demo-bucket/datasets/dataset_demo_perception_3d_v1/manifest.json"
+  },
+  "runtime": {
+    "image": "registry.example.com/demo/training-runtime:1.0",
+    "gpu_type": "generic_gpu",
+    "gpu_count": 1
+  },
+  "hyperparameters": {
+    "epochs": 20,
+    "batch_size": 4,
+    "learning_rate": 0.0005,
+    "optimizer": "adamw"
+  },
+  "output": {
+    "artifact_dir": "object://demo-bucket/models/model_demo_3d_detector_v1",
+    "metric_dir": "object://demo-bucket/metrics/model_demo_3d_detector_v1"
+  }
+}
+

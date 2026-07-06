@@ -1,0 +1,27 @@
+{
+  "model_version_id": "model_demo_3d_detector_v1",
+  "model_family": "perception_3d_detection",
+  "status": "ready_for_evaluation",
+  "artifact": {
+    "uri": "object://demo-bucket/models/model_demo_3d_detector_v1/model.onnx",
+    "format": "onnx"
+  },
+  "lineage": {
+    "training_job_id": "training_job_demo_000001",
+    "training_config_id": "training_config_demo_3d_detector_v1",
+    "dataset_version_id": "dataset_demo_perception_3d_v1",
+    "source_label_stage": "frozen"
+  },
+  "metric_summary": {
+    "map": 0.612,
+    "precision": 0.781,
+    "recall": 0.694,
+    "f1": 0.735
+  },
+  "known_limitations": [
+    "Lower performance in night scenarios",
+    "Pedestrian recall requires additional data"
+  ],
+  "next_step": "submit_to_phase5_automated_evaluation"
+}
+

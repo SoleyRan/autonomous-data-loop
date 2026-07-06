@@ -11,6 +11,7 @@ This directory contains sanitized public examples for the autonomous data loop p
 | `metadata/` | MCAP and dataset metadata examples |
 | `manifest/` | Package and dataset manifest examples |
 | `label-format/` | Canonical label examples |
+| `training/` | Training config, training job, metrics, and model card examples |
 | `api/` | Mock API definitions |
 | `probe-rule/` | Probe rule examples |
 
