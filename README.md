@@ -23,8 +23,8 @@ This project demonstrates how an autonomous driving data loop can evolve from ba
 | Phase | Name | Scope | Status |
 |---|---|---|---|
 | Phase 1 | Vehicle-cloud data upload | Metadata, probe rules, MCAP packaging, compression, upload, cloud ingestion, playback verification | Completed |
-| Phase 2 | Automated annotation and QC | MCAP asset management, automated annotation, Xtreme1 3D quality inspection, label versioning, KITTI/nuScenes export | Designed, ready for implementation |
-| Phase 3 | Dataset management | Canonical labels, dataset versioning, sample selection, dataset traceability | Planned |
+| Phase 2 | Automated annotation and QC | MCAP asset management, automated annotation, Xtreme1 3D quality inspection, label versioning, KITTI/nuScenes export | Completed |
+| Phase 3 | Dataset management | Canonical labels, dataset versioning, sample selection, dataset traceability | Completed |
 | Phase 4 | Model training | Training task orchestration, model registry, metric tracking, model-to-data traceability | Planned |
 | Phase 5 | Automated test and evaluation | MCAP replay, SOC/Xavier execution, perception output comparison, evaluation reports | Planned |
 | Phase 6 | Feedback-driven collection | Failed-case analysis, probe-rule updates, targeted recollection, closed-loop iteration | Planned |
