@@ -1,0 +1,55 @@
+{
+  "evaluation_job_id": "evaluation_job_demo_000001",
+  "model_version_id": "model_demo_3d_detector_v1",
+  "predictions": [
+    {
+      "sample_id": "sample_demo_000001",
+      "source_mcap_id": "mcap_demo_000001",
+      "frame_timestamp_ns": 1780653600000000000,
+      "sensor_name": "lidar_front",
+      "objects": [
+        {
+          "prediction_id": "prediction_demo_000001",
+          "class_name": "car",
+          "confidence": 0.91,
+          "box_3d": {
+            "center": {
+              "x": 12.7,
+              "y": -1.6,
+              "z": 0.9
+            },
+            "size": {
+              "length": 4.5,
+              "width": 1.9,
+              "height": 1.6
+            },
+            "rotation": {
+              "yaw": 1.55
+            }
+          }
+        },
+        {
+          "prediction_id": "prediction_demo_000002",
+          "class_name": "truck",
+          "confidence": 0.62,
+          "box_3d": {
+            "center": {
+              "x": 25.0,
+              "y": 4.2,
+              "z": 1.1
+            },
+            "size": {
+              "length": 7.8,
+              "width": 2.5,
+              "height": 2.8
+            },
+            "rotation": {
+              "yaw": 0.4
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+

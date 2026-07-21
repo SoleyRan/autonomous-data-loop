@@ -12,6 +12,7 @@ This directory contains sanitized public examples for the autonomous data loop p
 | `manifest/` | Package and dataset manifest examples |
 | `label-format/` | Canonical label examples |
 | `training/` | Training config, training job, metrics, and model card examples |
+| `evaluation/` | Evaluation job, perception output, report, and regression case examples |
 | `api/` | Mock API definitions |
 | `probe-rule/` | Probe rule examples |
 

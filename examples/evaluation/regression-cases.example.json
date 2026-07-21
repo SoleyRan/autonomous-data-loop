@@ -1,0 +1,23 @@
+{
+  "evaluation_job_id": "evaluation_job_demo_000001",
+  "cases": [
+    {
+      "case_id": "regression_case_demo_000001",
+      "sample_id": "sample_demo_000001",
+      "source_mcap_id": "mcap_demo_000001",
+      "frame_timestamp_ns": 1780653600000000000,
+      "error_type": "false_positive",
+      "expected": null,
+      "actual": {
+        "class_name": "truck",
+        "confidence": 0.62
+      },
+      "scene_tags": [
+        "daytime",
+        "intersection"
+      ],
+      "suggested_action": "review_similar_false_positive_cases"
+    }
+  ]
+}
+

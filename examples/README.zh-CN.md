@@ -12,6 +12,7 @@
 | `manifest/` | 数据包和数据集 manifest 示例 |
 | `label-format/` | 统一标签格式示例 |
 | `training/` | 训练配置、训练任务、指标和模型卡片示例 |
+| `evaluation/` | 评测任务、感知输出、报告和回归 case 示例 |
 | `api/` | Mock API 定义 |
 | `probe-rule/` | 探针规则示例 |
 

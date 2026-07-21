@@ -1,0 +1,33 @@
+{
+  "evaluation_job_id": "evaluation_job_demo_000001",
+  "dataset_version_id": "dataset_demo_perception_3d_v1",
+  "model_version_id": "model_demo_3d_detector_v1",
+  "status": "report_ready",
+  "created_at": "2026-07-21T09:00:00.000Z",
+  "runtime": {
+    "runtime_type": "container",
+    "image": "registry.example.com/demo/evaluation-runtime:1.0",
+    "node": "evaluation_node_demo_01"
+  },
+  "replay": {
+    "mode": "dataset_samples",
+    "input_manifest_uri": "object://demo-bucket/datasets/dataset_demo_perception_3d_v1/manifest.json",
+    "time_sync": "use_recorded_timestamp"
+  },
+  "metric_config": {
+    "matching": {
+      "center_distance_threshold_m": 2.0
+    },
+    "dimensions": [
+      "overall",
+      "class",
+      "scenario"
+    ]
+  },
+  "outputs": {
+    "prediction_uri": "object://demo-bucket/evaluation/evaluation_job_demo_000001/predictions.json",
+    "report_uri": "object://demo-bucket/evaluation/evaluation_job_demo_000001/report.json",
+    "log_uri": "object://demo-bucket/evaluation/evaluation_job_demo_000001/runtime.log"
+  }
+}
+
