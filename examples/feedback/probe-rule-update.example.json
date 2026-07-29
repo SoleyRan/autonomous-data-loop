@@ -1,0 +1,42 @@
+{
+  "probe_rule_update_id": "probe_rule_update_demo_000001",
+  "requirement_id": "data_requirement_demo_000001",
+  "proposal_type": "create",
+  "probe_rule": {
+    "probe_rule_id": "probe_rule_demo_feedback_001",
+    "name": "intersection_middle_range_truck_feedback_rule",
+    "version": "1.0",
+    "enabled": true,
+    "priority": 70,
+    "validity": {
+      "start_at": "2026-07-21T00:00:00.000Z",
+      "expire_at": "2026-08-31T00:00:00.000Z"
+    },
+    "trigger": {
+      "scene_tags": [
+        "intersection"
+      ],
+      "object_class_hint": "truck",
+      "distance_range": "middle"
+    },
+    "capture": {
+      "pre_seconds": 8,
+      "post_seconds": 8,
+      "topics": [
+        "/camera/front",
+        "/lidar/front",
+        "/vehicle/state"
+      ]
+    },
+    "upload": {
+      "strategy": "on_trigger",
+      "target_count": 200,
+      "compress": true
+    }
+  },
+  "review": {
+    "status": "pending",
+    "risk_level": "medium"
+  }
+}
+

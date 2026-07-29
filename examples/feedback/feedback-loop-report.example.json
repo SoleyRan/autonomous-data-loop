@@ -1,0 +1,26 @@
+{
+  "feedback_loop_report_id": "feedback_loop_report_demo_000001",
+  "requirement_id": "data_requirement_demo_000001",
+  "probe_rule_update_id": "probe_rule_update_demo_000001",
+  "status": "in_progress",
+  "collection": {
+    "target_count": 200,
+    "collected_count": 80,
+    "useful_count": 56,
+    "useful_data_rate": 0.7
+  },
+  "downstream": {
+    "new_dataset_version_id": "dataset_demo_perception_3d_v2",
+    "new_model_version_id": "model_demo_3d_detector_v2",
+    "evaluation_job_id": "evaluation_job_demo_000002"
+  },
+  "outcome": {
+    "target_metric": "truck_false_positive_rate",
+    "baseline": 0.22,
+    "current": 0.16,
+    "delta": -0.06,
+    "result": "improved_but_not_closed"
+  },
+  "next_step": "continue_targeted_collection"
+}
+

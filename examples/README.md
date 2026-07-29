@@ -13,6 +13,7 @@ This directory contains sanitized public examples for the autonomous data loop p
 | `label-format/` | Canonical label examples |
 | `training/` | Training config, training job, metrics, and model card examples |
 | `evaluation/` | Evaluation job, perception output, report, and regression case examples |
+| `feedback/` | Feedback case, data requirement, probe rule update, and loop report examples |
 | `api/` | Mock API definitions |
 | `probe-rule/` | Probe rule examples |
 

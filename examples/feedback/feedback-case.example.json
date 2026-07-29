@@ -1,0 +1,27 @@
+{
+  "case_id": "feedback_case_demo_000001",
+  "source": "phase5_evaluation",
+  "source_report_id": "evaluation_report_demo_000001",
+  "error_type": "false_positive",
+  "object_class": "truck",
+  "severity": "medium",
+  "lineage": {
+    "source_mcap_id": "mcap_demo_000001",
+    "sample_id": "sample_demo_000001",
+    "dataset_version_id": "dataset_demo_perception_3d_v1",
+    "label_version_id": "label_version_demo_000001",
+    "model_version_id": "model_demo_3d_detector_v1",
+    "evaluation_job_id": "evaluation_job_demo_000001"
+  },
+  "scenario": {
+    "scene_tags": [
+      "daytime",
+      "intersection"
+    ],
+    "distance_range": "middle",
+    "sensor": "lidar_front"
+  },
+  "suggested_action": "collect_more_intersection_middle_range_samples",
+  "status": "new"
+}
+

@@ -1,0 +1,26 @@
+{
+  "requirement_id": "data_requirement_demo_000001",
+  "name": "intersection_middle_range_truck_fp_reduction",
+  "source_case_ids": [
+    "feedback_case_demo_000001"
+  ],
+  "target_scenario": {
+    "scene_tags": [
+      "daytime",
+      "intersection"
+    ],
+    "object_class": "truck",
+    "distance_range": "middle",
+    "error_type": "false_positive"
+  },
+  "target_count": 200,
+  "priority": 70,
+  "deadline": "2026-08-31T00:00:00.000Z",
+  "success_criteria": {
+    "useful_data_rate_min": 0.6,
+    "target_metric": "truck_false_positive_rate",
+    "expected_delta": -0.15
+  },
+  "status": "rule_proposed"
+}
+
